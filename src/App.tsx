@@ -1,10 +1,18 @@
+import { SharedLayout } from "./layout";
+import { HomePage } from "./pages";
 import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <p>Click on the Vite and React logos to learn more</p>
-    </>
+    <BrowserRouter>
+      <Routes>
+        {/* RENDERS THE SHARED LAYOUT OF THE MAIN PAGE */}
+        <Route element={<SharedLayout />}>
+          <Route path="/" element={<HomePage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
