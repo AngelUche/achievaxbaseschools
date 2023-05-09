@@ -3,8 +3,8 @@ import JunioSchool from "../../assets/Homepage/juniorschool.jpg";
 import SenrioSchool from "../../assets/Homepage/eng_students.jpg";
 
 // upcoming events images
-import FirstImage from "../../assets/Homepage/Num3.jpg";
-import SecondImage from "../../assets/Homepage/num4.png";
+import FirstImage from "../../assets/Homepage//ladies.jpg";
+import SecondImage from "../../assets/Homepage/FatherXmas.png";
 import ThiredImage from "../../assets/Homepage/secondTerm.png";
 
 // importing the prnt testimony img
@@ -12,16 +12,16 @@ import cynthia from "../../assets/Homepage/Cynthia.jpg";
 import frank from "../../assets/Homepage/Frank.jpg";
 import deborah from "../../assets/Homepage/Deborah.jpg";
 // Importing images fpr the gallery
-import NigerianGirls from "../../assets/Homepage/Num3.jpg";
-import FatherChri from "../../assets/Homepage/num4.png";
-import Soldires from "../../assets/Homepage/Num5.jpg";
-import num8 from "../../assets/Homepage/num8.jpg";
-import num7 from "../../assets/Homepage/StudentPlay.jpg";
-import num6 from "../../assets/Homepage/num6.jpg";
-import num10 from "../../assets/Homepage/um10.jpg";
-import num9 from "../../assets/Homepage/num9.jpg";
-import num11 from "../../assets/Homepage/upcomingeent.jpg";
-import num12 from "../../assets/Homepage/small-children-graduation.jpg";
+import NigerianGirls from "../../assets/Homepage/NigerianGilrs.jpg";
+import FatherChri from "../../assets/Homepage/FatherXmas.png";
+import Soldires from "../../assets/Homepage/soldiersMatch.jpg";
+import eight from "../../assets/Homepage/hokey.jpg";
+import seven from "../../assets/Homepage/child.jpg";
+import six from "../../assets/Homepage/childdd.jpg";
+import ten from "../../assets/Homepage/cross.jpg";
+import nine from "../../assets/Homepage/SecondHokey.jpg";
+import eleven from "../../assets/Homepage/upcomingeent.jpg";
+import twelve from "../../assets/Homepage/small-children-graduation.jpg";
 
 export const LandingPageData = [
   {
@@ -107,30 +107,30 @@ export const Galleries = [
   },
   {
     id: 4,
-    img: num8,
+    img: seven,
   },
   {
     id: 5,
-    img: num7,
+    img: eight,
   },
   {
     id: 6,
-    img: num10,
+    img: ten,
   },
   {
     id: 7,
-    img: num11,
+    img: eleven,
   },
   {
     id: 8,
-    img: num12,
+    img: twelve,
   },
   {
     id: 9,
-    img: num9,
+    img: nine,
   },
   {
     id: 10,
-    img: num6,
+    img: six,
   },
 ];
