@@ -40,7 +40,7 @@ function LandingPage() {
             </div>
           </div>
         </div>
-        <div className="w-[85%] mx-auto flex flex-col gap-[200px] mb-[6rem] mt-[200px]">
+        <div className="w-[85%] mx-auto flex flex-col gap-[140px] mb-[4rem] mt-[120px]">
           <section className="">
             <h3
               className="font-bold text-3xl lg:text-4xl text-center
@@ -86,10 +86,10 @@ function LandingPage() {
           </section>
         </div>
         <div className="mb-[120px]">
-          <h1 className=" text-[#328bc8] font-bold md:text-[40px]  text-center mb-[26px] text-[28px]">
+          <h1 className=" text-[#328bc8] font-bold md:text-[40px] text-center mb-[26px] text-[28px]">
             VIEW OUR ARTS AND GALLERIES
           </h1>
-          <div className="grid md:grid-cols-5 gap-2 md:gap-0">
+          <div className="grid lg:grid-cols-5 gap-2 md:gap-0 px-[10px] lg:px-0 md:grid-cols-2 mx-auto">
             {Galleries.map((galery) => {
               return (
                 <div key={galery.id}>

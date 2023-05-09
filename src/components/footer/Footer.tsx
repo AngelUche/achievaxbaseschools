@@ -1,6 +1,7 @@
 import { FooterGridData, SocialIcons } from "../../data/footerData/FooterData";
 import Grids from "./Grids";
 import React from "react";
+import footervector from "../../assets/Homepage/logo.png";
 
 const Footer = () => {
   const [email, setEmail] = React.useState<string>("");
@@ -17,14 +18,14 @@ const Footer = () => {
           className=" grid md:grid-cols-5 px-[30px] py-[20px] xl:px-[80px]
        gap-y-[40px] md:h-fit h-auto"
         >
-          <div className="">
+          <div>
             <h2 className="mt-[1px] mb-[10px] xl:text-[21px] xl:font-semibold">
               AchievaxBaseSchools
             </h2>
             <div>
-              <div className="flex gap-4 mt-3">
-                <div className="w-[30px]">
-                  <img src="" alt="img" />
+              <div className="flex gap-[6px] mt-3 pt-[5px]">
+                <div className="w-[40px] h-[30px]">
+                  <img src={footervector} alt="img" className="w-full h-full" />
                 </div>
                 <div className="">
                   <p className="capitalize leading-[20px] mb-[25px] pr-4">
