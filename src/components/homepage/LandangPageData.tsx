@@ -16,7 +16,7 @@ import NigerianGirls from "../../assets/Homepage/Num3.jpg";
 import FatherChri from "../../assets/Homepage/num4.png";
 import Soldires from "../../assets/Homepage/Num5.jpg";
 import num8 from "../../assets/Homepage/num8.jpg";
-import num7 from "../../assets/Homepage/num7.jpg";
+import num7 from "../../assets/Homepage/StudentPlay.jpg";
 import num6 from "../../assets/Homepage/num6.jpg";
 import num10 from "../../assets/Homepage/um10.jpg";
 import num9 from "../../assets/Homepage/num9.jpg";
@@ -64,13 +64,6 @@ export const upcomingevents = [
   },
 ];
 
-// export interface discoverInterface {
-//   id: number;
-//   img: string;
-//   name: string;
-//   poostion: string;
-//   text: string;
-// }
 export const discover = [
   {
     id: 1,
