@@ -13,7 +13,7 @@ const Navlinkes = () => {
     <>
       <div
         className=" z-0 justify-center md:justify-start pt-[6rem] md:pt-0 md:items-center
-        flex md:flex-row md:gap-x-[1.8%] md:ml-[15%] text-white w-[250px] md:w-full bg-[black]
+        flex md:flex-row md:gap-x-[1.8%] md:ml-[15%] text-white w-[250px] md:w-full
         flex-col gap-y-14 md:gap-y-0 md:pl-[2%] md:h-[60px] pl-10 lg:gap-x-[3%] lg:ml-[20%]"
       >
         <div className="flex">
