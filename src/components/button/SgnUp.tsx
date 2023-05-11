@@ -1,10 +1,18 @@
 import { Link } from "react-router-dom";
+type ButtonProps = {
+  // 👇️ type as React.CSSProperties
+  style: React.CSSProperties;
+  children: React.ReactNode;
+};
 
-const SignUp = ({ name }: any) => {
+const SignUp = ({ children, style }: ButtonProps) => {
   return (
     <Link to="singup">
-      <button className="px-8 py-4 bg-[#328bc8] rounded-lg hover:cursor-pointer hover:bg-[#1462bb] hover:boreder-[#328bc8] transition ease-in-out duration-300">
-        {name}
+      <button
+        style={style}
+        className=" bg-[#328bc8] rounded-[4px]  hover:bg-[#1462bb] hover:boreder-[#328bc8] transition ease-in-out duration-300"
+      >
+        {children}
       </button>
     </Link>
   );

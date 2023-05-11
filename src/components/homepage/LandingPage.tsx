@@ -26,17 +26,29 @@ function LandingPage() {
         transition={{ duration: 0.85, ease: easeInOut }}
       >
         <div className="Bacgroundimage ">
-          <div className="md:w-[70%] mx-auto pt-[8rem]">
-            <h1 className=" text-4xl lg:text-5xl font-bold px-4 mb-[0.5rem] leading-normal">
-              Achieve your potential with AchievaxBaseSchools
-            </h1>
-            <h3 className="w-[90%] text-xl text-[#c9c3c3] mx-auto mb-[3rem]">
-              we believe that every student has the potential to achieve
-              greatness
-            </h3>
+          <div className="md:w-[70%] mx-auto justify-center items-center flex flex-col gap-6 pt-[10rem] ">
+            <div>
+              <h1 className=" text-4xl lg:text-5xl font-bold px-4 mb-[0.5rem] leading-normal">
+                Achieve your potential with AchievaxBaseSchools
+              </h1>
+              <h3 className="w-[90%] text-xl text-[#c9c3c3] mx-auto mb-[3rem]">
+                we believe that every student has the potential to achieve
+                greatness
+              </h3>
+            </div>
             <div className="flex items-center justify-center gap-12">
-              <Login>Login</Login>
-              <SignUp name="SignUp" />
+              <div>
+                <Login style={{ padding: "16px 32px" }}>Login</Login>
+              </div>
+              <div>
+                <SignUp
+                  style={{
+                    padding: "16px 32px",
+                  }}
+                >
+                  Sign Up
+                </SignUp>
+              </div>
             </div>
           </div>
         </div>

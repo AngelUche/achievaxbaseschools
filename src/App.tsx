@@ -1,4 +1,4 @@
-import { SharedLayout } from "./layout";
+import { SharedLayout } from "./routes";
 import { HomePage } from "./pages";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";

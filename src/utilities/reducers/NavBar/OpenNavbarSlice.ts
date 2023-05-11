@@ -1,0 +1,5 @@
+
+const NavBarInitialState={
+isNavbarOpen:false,
+}
+

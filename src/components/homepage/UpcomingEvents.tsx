@@ -28,7 +28,7 @@ const UpcomingEvents = () => {
               <div className="lg:h-[300px] h-[450px] mx-auto md:w-[80%] lg:w-[100%]">
                 <img src={event.img} alt="events" className="w-full h-full" />
               </div>
-              <div className="mx-auto md:w-[80%] lg:w-[90%]">
+              <div className="mx-auto w-[85%] md:w-[80%] lg:w-[90%] mb-3 md:mb-0">
                 <h3 className="mb-[20px] mt-[30px] font-semibold text-3xl lg:text-xl xl:text-[25px]">
                   {event.headings}
                 </h3>
