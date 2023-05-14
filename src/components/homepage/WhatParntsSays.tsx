@@ -11,7 +11,7 @@ const WhatParntsSays = () => {
     <div className="grid lg:grid-cols-3 gap-[60px] lg:gap-[10px] items-center justify-center">
       {discover.map((mesage) => {
         return (
-          <div className="mx-auto" data-aos="zoom-in-up">
+          <div className="mx-auto" data-aos="zoom-in-up" key={mesage.id}>
             <div className="bg-red-400 mb-[20px] overflow-hidden rounded-full  w-[180px] mx-auto">
               <img
                 src={mesage.img}

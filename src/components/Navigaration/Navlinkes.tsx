@@ -3,7 +3,7 @@ import { Login, SignUp } from "..";
 import { AboutUs, Admissions, Academics, Portal } from "./NavLinkData";
 import { TbChevronUp } from "react-icons/tb";
 import "../../assets/styles/Navlinlks.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Logo from "../../assets/Homepage/logo.png";
 
 const Navlinkes = () => {
@@ -11,15 +11,18 @@ const Navlinkes = () => {
   const [isAcedmicShown, setSsAcedmicShown] = useState<boolean>(false);
   const [isAdmissionhown, setIsAdmissionhown] = useState<boolean>(false);
   const [isPortalShown, setIsPortalShown] = useState<boolean>(false);
+
   return (
     <>
-      <div className="fle gap-[3%] md:pl-[16%] h-full">
-        <div className="md:w-[60px] md:h-[62px] w-[43px] h-[50px] hidden md:block">
+      <div
+        className={`flex gap-[3%] md:pl-[16%] h-full items-center justify-center md:h-[80px] `}
+      >
+        <div className="md:w-[60px] md:h-[52px] w-[43px] h-[50px] hidden md:block">
           <img src={Logo} alt="img" className="block w-full h-full" />
         </div>
         <div
           className=" z-10 justify-center md:justify-start md:items-center flex md:flex-row md:gap-x-[1.8%] text-white w-[250px] md:w-full
-        flex-col gap-y-[5rem] md:gap-y-0 md:pl-[10%] md:h-[60px] pl-10 lg:gap-x-[4%] pt-5 md:pt-0"
+        flex-col gap-y-[5rem] md:gap-y-0 md:pl-[10%]  pl-10 lg:gap-x-[4%] pt-5 md:pt-0"
         >
           <div className="flex">
             <NavLink
