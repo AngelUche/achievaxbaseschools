@@ -2,13 +2,11 @@ import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Navlinkes from "./Navlinkes";
 import Logo from "../../assets/Homepage/logo.png";
+import { NavBarContext } from "../../context/NavigationContet";
+import { useContext } from "react";
 
 function Navbar() {
-  const [isnavOpen, setIsNavOpen] = useState<boolean>(false);
-
-  function handleToggleNav() {
-    setIsNavOpen(!isnavOpen);
-  }
+  const { isNavbarOpen, toggleNavBar } = useContext(NavBarContext);
 
   return (
     <>
@@ -17,8 +15,8 @@ function Navbar() {
           <img src={Logo} alt="img" className="block w-full h-full" />
         </div>
         {/* Mobile Hamburger Menu */}
-        <div className={`md:hidden cursor-pointer`} onClick={handleToggleNav}>
-          {isnavOpen ? (
+        <div className={`md:hidden cursor-pointer`} onClick={toggleNavBar}>
+          {isNavbarOpen ? (
             <AiOutlineClose size={30} color="grey" />
           ) : (
             <AiOutlineMenu size={30} color="w" />
@@ -28,7 +26,7 @@ function Navbar() {
       {/* Aside Navigation */}
       <div
         className={`fixed z-10 md:hidden transition duration-[.9s] inset-y-0 ease-in-out top-0  bg-[black] ${
-          isnavOpen ? "translate-x-[0]" : "-translate-x-[120%]"
+          isNavbarOpen ? "translate-x-[0]" : "-translate-x-[120%]"
         } `}
       >
         <Navlinkes />

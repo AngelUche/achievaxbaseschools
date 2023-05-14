@@ -1,26 +1,36 @@
-// import { useState, useContext, createContext, ReactNode } from "react";
+import { useState, createContext, ReactNode } from "react";
 
-// interface NavBarContextInterface{
+interface NavBarContextInterface {
+  toggleNavBar: () => void;
+  isNavbarOpen: boolean;
+  setNavBarToFalse: () => void;
+}
 
-// }
+// interface FOR THE state values (useState)
+// SETTNG INTERFACEFOR THE CHILDREN AND THE VALUE
+interface isNavbarOpenProps {
+  children: ReactNode;
+}
 
-// // interface FOR THE state values (useState)
-// interface NavBarOpenInterface {
-//   isNavbarOpen: boolean;
-// }
-// // SETTNG INTERFACEFOR THE CHILDREN AND THE VALUE
-// interface ViewResultContextproviderprops {
-//   children: ReactNode;
-// }
+export const NavBarContext = createContext({} as NavBarContextInterface);
 
-// export const NavBarContext = createContext({} as NavBarContextInterface);
+export function NavBarContextProvider({ children }: isNavbarOpenProps) {
+  const [isNavbarOpen, setIsNavbarOpen] = useState<boolean>(false);
 
-// export function NavBarContextPorider({ childre }: ViewResultContextproviderprops) {
-//   function toggleNavBar({ navbar }: NavBarOpenInterface) {
-//     setIsNavbarOpen(!isNavbarOpen)
-//   }
+  function toggleNavBar() {
+    console.log(isNavbarOpen);
 
-//   const [isNavbarOpen, setIsNavbarOpen] = useState<NavBarOpenInterface>(
-//     ({isNavbarOpen: false})
-//   );
-// };
+    setIsNavbarOpen(!isNavbarOpen);
+  }
+  function setNavBarToFalse() {
+    setIsNavbarOpen(false);
+  }
+
+  return (
+    <NavBarContext.Provider
+      value={{ isNavbarOpen, toggleNavBar, setNavBarToFalse }}
+    >
+      {children}
+    </NavBarContext.Provider>
+  );
+}
