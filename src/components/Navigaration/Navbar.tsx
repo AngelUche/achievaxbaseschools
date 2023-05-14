@@ -20,7 +20,7 @@ function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const color = `${scrollTop >= 521 ? "grey" : "white"}`;
+  const color = `${scrollTop >= 521 ? "black" : "white"}`;
 
   return (
     <>
