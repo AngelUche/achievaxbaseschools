@@ -3,7 +3,7 @@ import { Login, SignUp } from "..";
 import { AboutUs, Admissions, Academics, Portal } from "./NavLinkData";
 import { TbChevronUp } from "react-icons/tb";
 import "../../assets/styles/Navlinlks.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Logo from "../../assets/Homepage/logo.png";
 
 const Navlinkes = () => {
@@ -56,7 +56,9 @@ const Navlinkes = () => {
                 <p className="NavLinkshovereffect">About Us</p>
               </div>
             </NavLink>
-            <TbChevronUp />
+            <div onClick={() => setIsShown(!isShown)}>
+              <TbChevronUp />
+            </div>
             {isShown && (
               <div className="absolute top-6 md:top-5 bg-white text-black left-[-20px] md:left-[-40px] text-sm leading-5 md:leading-7 p-3 ">
                 {AboutUs.map((about) => {
@@ -89,11 +91,11 @@ const Navlinkes = () => {
                 <p className="NavLinkshovereffect">Acedemics</p>
               </div>
             </NavLink>
-            <div>
+            <div onClick={() => setSsAcedmicShown(!isShown)}>
               <TbChevronUp />
             </div>
             {isAcedmicShown && (
-              <div className="absolute top-6 md:top-5 bg-white text-black left-[-20px] md:left-[-30px] text-sm leading-5 md:leading-7p-3  w-max">
+              <div className="absolute top-6 md:top-5 bg-white text-black left-[-20px] md:left-[-30px] text-sm leading-7 p-3  text-center w-[190px] md:w-max">
                 {Academics.map((about) => {
                   return (
                     <div key={about.id}>
@@ -124,11 +126,11 @@ const Navlinkes = () => {
                 <p className="NavLinkshovereffect">Admissions</p>
               </div>
             </NavLink>
-            <div>
+            <div onClick={() => setIsAdmissionhown(!isShown)}>
               <TbChevronUp />
             </div>
             {isAdmissionhown && (
-              <div className="absolute top-6 md:top-5 bg-white text-black left-[-20px] md:left-[-30px] text-sm leading-5 md:leading-7 p-3 w-max">
+              <div className="absolute top-6 md:top-5 bg-white text-black left-[-20px] md:left-[-30px] text-sm leading-7 p-3 text-center w-[190px] md:w-max">
                 {Admissions.map((about) => {
                   return (
                     <div key={about.id}>
@@ -159,11 +161,11 @@ const Navlinkes = () => {
                 <p className="NavLinkshovereffect">Portal</p>
               </div>
             </NavLink>
-            <div>
+            <div onClick={() => setIsPortalShown(!isShown)}>
               <TbChevronUp />
             </div>
             {isPortalShown && (
-              <div className="absolute top-6 md:top-5 bg-white text-black left-[-20px] md:left-[-30px] text-sm leading-5 md:leading-7 p-3  w-max">
+              <div className="absolute top-6 md:top-5 bg-white text-black left-[-20px] md:left-[-30px] text-sm text-center leading-7 p-3  w-[180px] md:w-max">
                 {Portal.map((about) => {
                   return (
                     <div key={about.id}>

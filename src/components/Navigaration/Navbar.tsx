@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Navlinkes from "./Navlinkes";
 import Logo from "../../assets/Homepage/logo.png";
@@ -7,6 +7,20 @@ import { useContext } from "react";
 
 function Navbar() {
   const { isNavbarOpen, toggleNavBar } = useContext(NavBarContext);
+  const [scrollTop, setScrollTop] = useState<number>(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollTop(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  const color = `${scrollTop >= 521 ? "grey" : "white"}`;
 
   return (
     <>
@@ -17,9 +31,9 @@ function Navbar() {
         {/* Mobile Hamburger Menu */}
         <div className={`md:hidden cursor-pointer`} onClick={toggleNavBar}>
           {isNavbarOpen ? (
-            <AiOutlineClose size={30} color="grey" />
+            <AiOutlineClose size={30} color={color} />
           ) : (
-            <AiOutlineMenu size={30} color="w" />
+            <AiOutlineMenu size={30} color={color} />
           )}
         </div>
       </nav>

@@ -18,12 +18,12 @@ input[type=email]:focus {
   color:white;
 }
 
-.Bacgroundimage{
+.Landingpage-Backgroundimage{
   background-image:
       linear-gradient(360deg,
-        rgba(0, 0, 0, 0.60),
-        rgba(8, 0, 0, 0.60)), 
-        url('./assets/Homepage/graduation.jpeg');
+        rgba(0, 0, 0, 0.7),
+        rgba(8, 0, 0, 0.7)), 
+        url('./assets/Homepage/cross.jpg');
     width: 100%;
     height: 36rem;
     text-align: center;

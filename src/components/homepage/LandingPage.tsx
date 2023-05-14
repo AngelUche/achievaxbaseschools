@@ -13,6 +13,7 @@ import {
 } from "..";
 import { useContext } from "react";
 import { NavBarContext } from "../../context/NavigationContet";
+import "../../App.css";
 
 import { motion as m } from "framer-motion";
 import { easeInOut } from "framer-motion/dom";
@@ -26,11 +27,12 @@ function LandingPage() {
   return (
     <>
       <m.div
+        onClick={setNavBarToFalse}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.85, ease: easeInOut }}
       >
-        <div className="Bacgroundimage " onClick={setNavBarToFalse}>
+        <div className="Landingpage-Backgroundimage ">
           <div className="md:w-[70%] mx-auto justify-center items-center flex flex-col gap-6 pt-[10rem] ">
             <div>
               <h1 className=" text-4xl lg:text-5xl font-bold px-4 mb-[0.5rem] leading-normal">

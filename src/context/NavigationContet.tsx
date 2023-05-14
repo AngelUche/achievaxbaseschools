@@ -18,7 +18,7 @@ export function NavBarContextProvider({ children }: isNavbarOpenProps) {
   const [isNavbarOpen, setIsNavbarOpen] = useState<boolean>(false);
 
   function toggleNavBar() {
-    console.log(isNavbarOpen);
+    // console.log(isNavbarOpen);
 
     setIsNavbarOpen(!isNavbarOpen);
   }
